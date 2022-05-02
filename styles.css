@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+  
+.calculator {
+    background-color: #1f1f1f;
+    border-radius: 3%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    height: 700px;
+    padding: 20px;
+    width: 412px;
+}
+
+/* Screen results and operations */
+.display {
+    background-color: #33383e;
+    border-radius: 3% 3% 5% 5%;
+    grid-column: 1 / 5;
+    grid-row: 1/ 3;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.ac {
+    background-color: #c3eed0;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.ac:active {
+    background-color: #cff1d9;
+    border-radius: 20%;
+    color: #405b48;
+    transition: all 0.2s;
+}
+
+.number {
+    background-color: #292a2e;
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.number:active {
+    background-color: #545557;
+    border-radius: 20%;
+    color: #ffffff;
+    transition: all 0.2s;
+}
+  
+.one-by-one {
+    background-color: #33383e;
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.one-by-one:active {
+    background-color: #545557;
+    border-radius: 20%;
+    color: #ffffff;
+    transition: all 0.2s;
+}
+
+.operation {
+    background-color: #5ab2f1;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.operation:active {
+    background-color: #7bc1f2;
+    border-radius: 20%;
+    color: #33495c;
+    transition: all 0.2s;
+}
+
+.equal {
+    background-color: #d3e3fd;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+}
+
+.equal:active {
+    background-color: #dce9fc;
+    border-radius: 20%;
+    color: #374b6e;
+    transition: all 0.2s;
+}
