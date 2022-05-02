@@ -12,7 +12,7 @@
     <div class='container'>
         <article class='calculator'>
             <div class='display'>
-                <div class='current-operation'></div>
+                <div class='current-operation'  id='currentScreen'></div>
                 <div class='results'></div>
             </div>
  
@@ -23,26 +23,26 @@
             <button class='operation division'>&#247;</button>
 
             <!--Row two-->
-            <button class='number seven'>7</button>
-            <button class='number eight'>8</button>
-            <button class='number nine'>9</button>
+            <button class='number seven' onclick='showNumber("7")'>7</button>
+            <button class='number eight' onclick='showNumber("8")'>8</button>
+            <button class='number nine' onclick='showNumber("9")'>9</button>
             <button class='operation multiplication'>x</button>
 
             <!--Row three-->
-            <button class='number four'>4</button>
-            <button class='number five'>5</button>
-            <button class='number six'>6</button>
+            <button class='number four' onclick='showNumber("4")'>4</button>
+            <button class='number five' onclick='showNumber("5")'>5</button>
+            <button class='number six' onclick='showNumber("6")'>6</button>
             <button class='operation substraction'>-</button>
 
             <!--Row four-->
-            <button class='number one'>1</button>
-            <button class='number two'>2</button>
-            <button class='number three'>3</button>
+            <button class='number one' onclick='showNumber("1")'>1</button>
+            <button class='number two' onclick='showNumber("2")'>2</button>
+            <button class='number three' onclick='showNumber("3")'>3</button>
             <button class='operation addition'>+</button>
 
             <!--Row five-->
             <button class='number zero'>0</button>
-            <button class='number decimal'>.</button>
+            <button class='number decimal' onclick='showNumber(".")'>.</button>
             <button class='erase one-by-one'>&#9003;</button>
             <button class='operation equal'>=</button>
         </article>
